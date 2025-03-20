@@ -1,12 +1,14 @@
 import React from "react";
 import "./app.scss";
 import NavBar from "./components/NavBar/NavBar";
+import Home from "./components/Home/Home";
 
 const App = () => {
   return (
     <div>
       <section id="Home">
         <NavBar />
+        <Home />
       </section>
       <section id="Skills">Parallax</section>
       <section>Skills</section>
