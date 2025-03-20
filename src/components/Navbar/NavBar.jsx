@@ -1,13 +1,15 @@
 import React from "react";
 import "./navbar.scss";
+import SideBar from "../Sidebar/SideBar";
 
 const NavBar = () => {
   return (
     <div className="navbar">
       {/* Sidebar */}
+      <SideBar />
       <div className="wrapper">
         <span>
-          <img src="/logo (2).png" alt="" className="logo-img" />
+          {/* <img src="/logo (2).png" alt="" className="logo-img" /> */}
         </span>
         <div className="social">
           <a href="https://www.linkedin.com/in/patel-param/" target="_blank">
