@@ -2,6 +2,7 @@ import React from "react";
 import "./app.scss";
 import Cursor from "./components/cursor/Cursor";
 import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
 const App = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const App = () => {
       {/* Home Page */}
       <section id="Home">
         <Navbar />
-        {/* <Home /> */}
+        <Home />
       </section>
       {/* Parallax Page */}
       {/* <section id="Skills">
