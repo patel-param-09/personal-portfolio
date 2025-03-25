@@ -1,0 +1,90 @@
+@import "../../app.scss" ;
+
+.skills {
+  text-align: center;
+  padding: 50px;
+  background: #0c0c1d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  .heading {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: orange;
+
+    @include mobile{
+      font-size: 26px;
+      margin-bottom: 10px;
+  }
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+
+    @include mobile{
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+    .skill-card {
+      background: #1a1a2e;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+
+      @include mobile{
+        // margin-top: 5px;
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.4);
+      }
+
+      .skill-image {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        margin-bottom: 10px;
+
+        @include mobile{
+          object-fit: contain;
+          height: 45px;
+          width: 45px;
+          margin-bottom: 2px;
+      }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        @include mobile{
+          font-size: 0.9rem ;
+      }
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: gray;
+
+        @include mobile{
+          font-size: 0.7rem ;
+          margin-top: 3px;
+      }
+      }
+    }
+  }
+}

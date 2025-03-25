@@ -4,6 +4,7 @@ import Cursor from "./components/cursor/Cursor";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Parallax from "./components/parallax/Parallax";
+import Skills from "./components/skills/Skills";
 const App = () => {
   return (
     <div>
