@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import "./app.scss";
+import Home from "./components/Home/Home";
+import Cursor from "./components/cursor/Cursor";
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <Cursor />
+      {/* Home Page */}
+      <section id="Home">
+        <NavBar />
+        <Home />
+      </section>
+      {/* Parallax Page */}
+      <section id="Skills">
+        <Parallax type="skills" />
+      </section>
+      {/* Skills Page */}
+      <section>
+        <Skills />
+      </section>
+      {/* Parallax Page */}
+      <section id="Projects">
+        <Parallax type="projects" />
+      </section>
+      {/* Projects Page */}
+      <Project />
+      {/* Parallax Page */}
+      <section id="About">
+        <Parallax type="about" />
+      </section>
+      {/* About Page */}
+      <section>
+        <About />
+      </section>
+      {/* Contact Page */}
+      <section id="Contact">
+        <Contact />
+      </section>
+    </div>
+  );
+};
 
-export default App
+export default App;
