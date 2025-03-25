@@ -3,6 +3,7 @@ import "./app.scss";
 import Cursor from "./components/cursor/Cursor";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import Parallax from "./components/parallax/Parallax";
 const App = () => {
   return (
     <div>
@@ -13,13 +14,13 @@ const App = () => {
         <Home />
       </section>
       {/* Parallax Page */}
-      {/* <section id="Skills">
+      <section id="Skills">
         <Parallax type="skills" />
-      </section> */}
+      </section>
       {/* Skills Page */}
-      {/* <section>
+      <section>
         <Skills />
-      </section> */}
+      </section>
       {/* Parallax Page */}
       {/* <section id="Projects">
         <Parallax type="projects" />
