@@ -1,42 +1,42 @@
 import React from "react";
 import "./app.scss";
-import Home from "./components/Home/Home";
 import Cursor from "./components/cursor/Cursor";
+import Navbar from "./components/navbar/Navbar";
 const App = () => {
   return (
     <div>
       <Cursor />
       {/* Home Page */}
       <section id="Home">
-        <NavBar />
-        <Home />
+        <Navbar />
+        {/* <Home /> */}
       </section>
       {/* Parallax Page */}
-      <section id="Skills">
+      {/* <section id="Skills">
         <Parallax type="skills" />
-      </section>
+      </section> */}
       {/* Skills Page */}
-      <section>
+      {/* <section>
         <Skills />
-      </section>
+      </section> */}
       {/* Parallax Page */}
-      <section id="Projects">
+      {/* <section id="Projects">
         <Parallax type="projects" />
-      </section>
+      </section> */}
       {/* Projects Page */}
-      <Project />
+      {/* <Project /> */}
       {/* Parallax Page */}
-      <section id="About">
+      {/* <section id="About">
         <Parallax type="about" />
-      </section>
+      </section> */}
       {/* About Page */}
-      <section>
+      {/* <section>
         <About />
-      </section>
+      </section> */}
       {/* Contact Page */}
-      <section id="Contact">
+      {/* <section id="Contact">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 };
