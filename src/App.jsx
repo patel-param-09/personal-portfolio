@@ -7,6 +7,7 @@ import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <div>
@@ -39,9 +40,9 @@ const App = () => {
         <About />
       </section>
       {/* Contact Page */}
-      {/* <section id="Contact">
+      <section id="Contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 };

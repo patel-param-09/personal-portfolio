@@ -54,6 +54,16 @@
                     cursor: pointer;
                     font-weight: 300;
                 }
+
+                a{
+                    cursor: pointer;
+                    z-index: 1000;
+
+                    :hover{
+                        background-color: white;
+                        color:#0c0c1d ;
+                    }
+                }
             }
 
             img{
