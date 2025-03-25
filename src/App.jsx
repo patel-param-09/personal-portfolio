@@ -6,6 +6,7 @@ import Home from "./components/home/Home";
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
 const App = () => {
   return (
     <div>
@@ -30,13 +31,13 @@ const App = () => {
       {/* Projects Page */}
       <Projects />
       {/* Parallax Page */}
-      {/* <section id="About">
+      <section id="About">
         <Parallax type="about" />
-      </section> */}
+      </section>
       {/* About Page */}
-      {/* <section>
+      <section>
         <About />
-      </section> */}
+      </section>
       {/* Contact Page */}
       {/* <section id="Contact">
         <Contact />
