@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./sideBar.scss";
+import "./sidebar.scss";
 import { motion } from "motion/react";
 import Link from "./links/Link";
 import ToggleButtons from "./togglebuttons/ToggleButtons";
