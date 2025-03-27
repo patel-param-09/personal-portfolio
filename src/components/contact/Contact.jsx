@@ -20,6 +20,9 @@ const variants = {
 };
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
   const formRef = useRef();
@@ -50,12 +53,25 @@ const Contact = () => {
       })
       .then(
         () => {
+          setName("");
+          setEmail("");
+          setMessage("");
           toast.success("Email Sent Successfuly");
         },
         (error) => {
           toast.error("Error while sending Email");
         }
       );
+  };
+
+  const handleNameChnage = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmailChnage = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlMsgChnage = (e) => {
+    setMessage(e.target.value);
   };
 
   return (
@@ -100,11 +116,27 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" name="name" required />
-          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="text"
+            value={name}
+            placeholder="Name"
+            name="name"
+            onChange={handleNameChnage}
+            required
+          />
+          <input
+            type="email"
+            value={email}
+            placeholder="Email"
+            name="email"
+            onChange={handleEmailChnage}
+            required
+          />
           <textarea
             placeholder="Message"
+            value={message}
             rows={8}
+            onChange={handlMsgChnage}
             name="message"
             required
           ></textarea>
